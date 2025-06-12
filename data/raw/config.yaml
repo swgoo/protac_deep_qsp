@@ -1,0 +1,65 @@
+feature:
+    - xlogp3
+    - hydrogen_bond_acceptor_count
+    - hydrogen_bond_donor_count
+    - rotatable_bond_count
+    - topological_polar_surface_area
+    - molecular_weight
+    - linker_xlogp3
+    - linker_hydrogen_bond_acceptor_count
+    - linker_hydrogen_bond_donor_count
+    - linker_rotatable_bond_count
+    - linker_topological_polar_surface_area
+    - linker_molecular_weight
+    - warhead_xlogp3
+    - warhead_hydrogen_bond_acceptor_count
+    - warhead_hydrogen_bond_donor_count
+    - warhead_rotatable_bond_count
+    - warhead_topological_polar_surface_area
+    - warhead_molecular_weight
+    - warhead_binding_energy
+    - e3_ligand_xlogp3
+    - e3_ligand_hydrogen_bond_acceptor_count
+    - e3_ligand_hydrogen_bond_donor_count
+    - e3_ligand_rotatable_bond_count
+    - e3_ligand_topological_polar_surface_area
+    - e3_ligand_molecular_weight
+    - e3_ligand_binding_energy
+    - kde
+    - kdp
+    - kdegp
+target:
+    dmax:
+        - 0.1
+        - 1
+    dc50:
+        - 0
+        - 10000
+argument:
+    kde:
+        - 0.1
+        - 10
+    kdp:
+        - 0.1
+        - 10
+    kdegp:
+        - 0.1
+        - 10
+    e0:
+        - 0.01
+        - 100
+    alpha:
+        - 0.01
+        - 100
+    kcat:
+        - 0.1
+        - 5000
+batch_size: 1000
+num_epochs: 1000000
+lr: 0.005
+train_dataset_path: data/train.csv
+test_dataset_path: data/test.csv
+test_prediction_path: data/test_prediction.csv
+train_prediction_path: data/train_prediction.csv
+log_interval: 100
+model_save_path: data/model.pth

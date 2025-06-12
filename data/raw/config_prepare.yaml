@@ -1,0 +1,66 @@
+feature:
+    - xlogp3
+    - hydrogen_bond_acceptor_count
+    - hydrogen_bond_donor_count
+    - rotatable_bond_count
+    - topological_polar_surface_area
+    - molecular_weight
+    - linker_xlogp3
+    - linker_hydrogen_bond_acceptor_count
+    - linker_hydrogen_bond_donor_count
+    - linker_rotatable_bond_count
+    - linker_topological_polar_surface_area
+    - linker_molecular_weight
+    - warhead_xlogp3
+    - warhead_hydrogen_bond_acceptor_count
+    - warhead_hydrogen_bond_donor_count
+    - warhead_rotatable_bond_count
+    - warhead_topological_polar_surface_area
+    - warhead_molecular_weight
+    - warhead_binding_energy
+    - e3_ligand_xlogp3
+    - e3_ligand_hydrogen_bond_acceptor_count
+    - e3_ligand_hydrogen_bond_donor_count
+    - e3_ligand_rotatable_bond_count
+    - e3_ligand_topological_polar_surface_area
+    - e3_ligand_molecular_weight
+    - e3_ligand_binding_energy
+    - kde
+    - kdp
+    - kdegp
+    - dmax
+argument:
+    - kde
+    - kdp
+    - kdegp
+    - e0
+    - alpha_dmax
+    - alpha_dc50
+    - alpha
+    - kcat
+pathes:
+    # raw data
+    protac_csv_file : data/raw/protac.csv
+    target_protein_half_life_file : data/raw/target_protein_half_life.csv
+    affinity_file : data/raw/protac_pair_bindingAffinity.csv
+    # download urls
+    protac_db_url: http://cadd.zju.edu.cn/protacdb/statics/binaryDownload/csv/protac/protac.csv
+    e3_ligand_db_url: http://cadd.zju.edu.cn/protacdb/statics/binaryDownload/csv/e3_ligand/e3_ligand.csv
+    linker_db_url: http://cadd.zju.edu.cn/protacdb/statics/binaryDownload/csv/linker/linker.csv
+    warhead_db_url: http://cadd.zju.edu.cn/protacdb/statics/binaryDownload/csv/warhead/warhead.csv
+    # processed data
+    protac_db_indice_file: data/protac_db_indice.csv
+    protac_meta_info_dir: data/protac_meta_info
+    protein_dir: data/protein_files
+    e3_ligand_file: data/downloaded/e3_ligand.csv
+    linker_db_file: data/downloaded/linker.csv
+    warhead_db_file: data/downloaded/warhead.csv
+    protac_uniprot_smiles_pair_file: data/protac_pair.csv
+    merged_protac_db_file: data/protac.csv
+    model_dataset_file: data/model_dataset.csv
+    protac_file: data/protac.csv
+    train_file: data/train.csv
+    test_file: data/test.csv
+
+
+    

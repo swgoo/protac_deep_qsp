@@ -140,7 +140,7 @@ These files contain the actual and predicted values for `dmax` and `dc50`. The c
 ### Dataset Preparation (`prepare.py`)
 **Note:** You do not need to run `prepare.py`. The required datasets (`train.csv`, `test.csv`) are already provided.
 
-This script is included for transparency to show how the dataset for this study was constructed from [PROTAC-DB 3.0](https://protac-db.com/) and [ProteomicsDB](https://www.proteomicsdb.org/). Running this script may require specific environment setups or API access and is intended for methodological reference only.
+This script is included for transparency to show how the dataset for this study was constructed from [PROTAC-DB 3.0](http://cadd.zju.edu.cn/protacdb/about) and [ProteomicsDB](https://www.proteomicsdb.org/). Running this script may require specific environment setups or API access and is intended for methodological reference only.
 
 ```bibtex
 @article{protacdb,

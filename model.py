@@ -1,6 +1,6 @@
 from pathlib import Path
 from typing import Callable
-from attr import dataclass
+from dataclasses import dataclass
 import pandas as pd
 import torch
 import torch.nn as nn
@@ -219,4 +219,4 @@ def run(config : Config | Path):
             fabric.save(config.model_save_path, model.state_dict())
     
 if __name__ == "__main__":
-    run(Path('data/raw/config.yaml'))
+    run(Path('data/config.yaml'))
